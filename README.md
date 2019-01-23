@@ -1,2 +1,0 @@
-# mozi
-python learning
