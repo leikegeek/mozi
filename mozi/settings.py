@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,9 +78,9 @@ WSGI_APPLICATION = 'mozi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',   # 数据库引擎
-        'NAME': 'mydb',         # 你要存储数据的库名，事先要创建之
-        'USER': 'root',         # 数据库用户名
-        'PASSWORD': '1234',     # 密码
+        'NAME': 'mozi',         # 你要存储数据的库名，事先要创建之
+        'USER': 'lake',         # 数据库用户名
+        'PASSWORD': 'lake',     # 密码
         'HOST': 'localhost',    # 主机
         'PORT': '3306',         # 数据库使用的端口
     }
@@ -109,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Shanghai'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 

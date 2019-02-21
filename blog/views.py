@@ -14,5 +14,5 @@ def json(request):
 
 # 返回HTML
 def home(request):
-    return render("/blog/index.html")
+    return render(request, 'blog/index.html')
 
